@@ -71,7 +71,7 @@ class Model(object):
 
         self.model.add(Dense(self.dataset.num_classes))
         self.model.add(BatchNormalization())
-        self.model.add(Activation('softmax'))
+        self.model.add(Activation('sigmoid'))
         self.model.summary()
 
 
